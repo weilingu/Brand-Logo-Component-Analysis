@@ -1,2 +1,8 @@
 # Logo-Feature-Component-Analysis
-This repository provides a way to parse components of a brand logo. It detects whetehr the logo contains the brand name, and what shapes the logo contains
+
+# Overview:
+This code allows you to extract features from a 2-D image. The preferred target images are brand logos. 
+The output consists of information on:
+  1.	whether the logo contains the brand name.
+  2.	whether the logo contains letters other than the brand name
+  3.	what shape(s) the logo contains 
