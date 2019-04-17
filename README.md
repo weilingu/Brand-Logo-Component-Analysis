@@ -16,8 +16,8 @@ Although the target images are brand logos, the code can easily be used to analy
 *	`Brand_Shape_Contour_Detection.py` Finds all the contour(s) of the shape component(s) of a logo.
 *	`master.py` Call the functions, detect shapes, create final dataset.
 
-# Datasets
+# Datasets Sample:
 
 1.	Shape dataset: Contains shapes of interest. Can be modified.
 2.	Brand Information: Data from NASDAQ, cleaned and provided by Colin Williams.
-3.	Logo image: 3457 publicly traded companies. Dataset provided by Colin Williams.
+3.	Logo image: 50 publicly traded companies. Dataset provided by Colin Williams.
