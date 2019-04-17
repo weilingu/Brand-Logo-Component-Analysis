@@ -19,18 +19,18 @@ import numpy as np
 from keras.models import model_from_json
 
 # Create global file path
-path='C:\\Users\\emily.gu\\Desktop\\Image Process\\'
+path='[path to file]'
 # create path to the image file
-img_path='P:\\User\\Colin.Williams\\CS 229\\images\\*'
+img_path='[path to image logo file]\\*'
 
 # create path to company information file. The files should contain at least information on 
 # the company name
-company_info_path="P:\\User\\Colin.Williams\\CS 229\\companylist.csv"
+company_info_path="[path to companylist file]"
 
 # create path to processed images (images whose recognized brand names or letters are cropped out) and base shapes
-brand_name_processed_img="C:\\Users\\emily.gu\\Desktop\\Image Process\\int\\brand_name_dect\\"
-brand_letter_processed_img="C:\\Users\\emily.gu\\Desktop\\Image Process\\int\\brand_letter_dect\\"
-base_shape="C:\\Users\\emily.gu\\Desktop\\Image Process\\int\\"
+brand_name_processed_img="[create a path to store intermediate logo images after brand name detection step]"
+brand_letter_processed_img="[create a path to store intermediate logo images after alphabet detection step]"
+base_shape="[path to base shape file]"
 '''
 import data and process images, categorized processed images as:
 1. success_convert: brand name is fully/partially recognized on the image
