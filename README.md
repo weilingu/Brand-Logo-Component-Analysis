@@ -1,4 +1,4 @@
-# Logo-Feature-Component-Analysis
+# Logo Feature Component Analysis
 
 This code allows you to extract features from a 2-D image. The preferred target images are brand logos. 
 The output consists of information on:
