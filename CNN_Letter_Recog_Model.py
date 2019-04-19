@@ -22,9 +22,9 @@ This script trains a Convoluted Neural Network Model
 - The accuracy rate based on test dataset is about 94%
 '''
 # create path to the emnist dataset:
-emnist_data_path="P:\\User\\Emily.Gu\\ML Project\\mnist\\"
+emnist_data_path="[path to mnist dataset]"
 # create path to save the model architecture
-cnn_model_path='C:\\Users\\emily.gu\\Desktop\\Image Process\\'
+cnn_model_path='[path to save the model]'
 
 emnist_data = MNIST(path=emnist_data_path+"train", return_type='numpy')
 emnist_data.select_emnist('letters')

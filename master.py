@@ -22,6 +22,7 @@ from keras.models import model_from_json
 path='[path to file]'
 # create path to the image file
 img_path='[path to image logo file]\\*'
+img_path2='[path to image logo file]'
 
 # create path to company information file. The files should contain at least information on 
 # the company name
@@ -51,7 +52,7 @@ failed_convert=[]
 for c in company_symbol:
     print(c)
     try:
-        output=Brand_Name_Detection.brand_name_dect(c,company)
+        output=Brand_Name_Detection.brand_name_dect(c,company,img_path2)
         if output[3]=="":
             no_recog_brand_name[output[1]]=[output[2],output[3],output[4]]
         else:
@@ -167,9 +168,9 @@ identify remaining shapes in the logo after cropping out brand name and letters
 '''
 # load shape pictures
 shape={}
-animal_shapes=glob.glob(base_shape+'animal shapes\\*')
-geographical_shapes=glob.glob(base_shape+'geographical shapes\\*')
-geometric_shapes=glob.glob(base_shape+'geometric shapes\\*')
+animal_shapes=glob.glob(base_shape+'animal_shapes\\*')
+geographical_shapes=glob.glob(base_shape+'geographical_shapes\\*')
+geometric_shapes=glob.glob(base_shape+'geometric_shapes\\*')
 shapes_all=animal_shapes+geographical_shapes+geometric_shapes
 for img in shapes_all:
     path_start, path_mid,path_end = base_shape ,'\\','.'
@@ -258,4 +259,4 @@ df=df.merge(shape_data, how='inner', on="company")
 df=df.merge(letter_recog_df, how='inner', on="company")
 df=df.merge(company_info, how='inner', on="company")
 
-df.to_csv(path+"combined data.csv")
+df.to_csv(path+"combined_data.csv")

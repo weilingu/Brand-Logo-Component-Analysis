@@ -9,9 +9,7 @@ import cv2
 import pytesseract
 from pytesseract import Output
 import jellyfish
-pytesseract.pytesseract.tesseract_cmd="C:/Users/emily.gu/AppData/Local/Tesseract-OCR/tesseract.exe" 
-
-
+pytesseract.pytesseract.tesseract_cmd="[path to your downloaded tesseract.exe program.]"
 
 '''
 Use pytesseract to identify words/phrases in an image and their corresponding bonding boxes
@@ -22,9 +20,9 @@ Caution:
   (use string distance "jaro_winkler distance" )
 - only words/phrases that fully/partially matches company name are retained 
 '''
-def brand_name_dect(company_symbol,company):
+def brand_name_dect(company_symbol,company,path):
     
-    img=cv2.imread("P:\\User\\Colin.Williams\\CS 229\\images\\"+company_symbol+".jpg",0)
+    img=cv2.imread(path+company_symbol+".jpg",0)
     image_data = pytesseract.image_to_data(img,output_type=Output.DICT)
     
     phras_recog=[]
