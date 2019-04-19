@@ -57,11 +57,11 @@ Trained CNN letter recognition model and weights. Around 94.36% accuracy on the 
 
 * **Step 2: Identify Alphabetic Letters**
 
-*######Image feature segregation*
+* 1. Image feature segregation*
 
 <img src="https://user-images.githubusercontent.com/48388315/56434909-95450d80-62a4-11e9-80ae-66dbb64342bd.png" align="center"  height="200" width="400">
 
-*######The 2nd to the 4th segments are identified as "O", "A", and "A", and are cropped out of the image*
+* 2. The 2nd to the 4th segments are identified as "O", "A", and "A", and are cropped out of the image*
 
 <img src="https://user-images.githubusercontent.com/48388315/56435242-ce31b200-62a5-11e9-9374-41b709ecdba5.jpg" align="center"  height="300" width="300">
 
