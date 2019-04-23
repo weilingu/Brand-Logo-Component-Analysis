@@ -28,7 +28,7 @@ Trained CNN letter recognition model and weights. Around 94.36% accuracy on the 
 
 ## Data:
 
-* `data_sample` *Contributors: Colin Williams, Emily Gu*
+* `data_sample` *Contributors: Colin Williams @williamsca, Emily Gu*
 *  To download `emnist` dataset for CNN model training, follow the [python-mnist](https://pypi.org/project/python-mnist/) installation guide
 
 ## Image Processing Procedure
