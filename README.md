@@ -1,6 +1,9 @@
 # Logo Feature Component Analysis
 
 ## Overview
+There are hundreds of competitors selling substitue goods and services in almost every industry. However, only a few companies. In most cases, the companies that do not make it to the top either operate at low profit margins or go out of business. It's very common that the operating profit of the top 1 or 2 is more than the rest combined. A lot of economic and business theories have been developed to analyze factors that lead to company success. 
+
+This project takes a different perspective in understanding the sucess of a business. Given the similarities of products in the market, would it be possible that the logo design significantly affects consumer behavior? If so, what features in a logo are the most attractive to consumers?  
 
 This code allows you to extract features from a 2D image. Although the primary goal is to analyze brand logo images, this code can easily be adapted to analyze other kinds of 2D images. 
 
@@ -9,13 +12,14 @@ Aftering running the code on provided sample data, the output dataset consists o
   1.	whether a logo contains the brand name
   2.	whether a logo contains letters other than the brand name
   3.	what shape(s) a logo contains 
+  4.  other business information such as company stock prices, industry, and etc. 
   
 
 ## Code Implementation
 
 After downloading the code, edit the directories as indicated in `master.py` and run `master.py`. 
 
-*   `CNN_Letter_Recog_Model.py` Convolutional neural network model for alphabet recognition.
+* `CNN_Letter_Recog_Model.py` Convolutional neural network model for alphabet recognition.
 *	`Brand_Name_Detection.py` Detecting presence of brand logos using Python-tesseract.
 *	`Brand_Feature_Segregation.py` Segregating a logo into its shape component(s).
 *	`Brand_Shape_Contour_Detection.py` Finding all the contour(s) of the shape component(s) of a logo.
@@ -28,7 +32,7 @@ Trained CNN letter recognition model and weights. Around 94.36% accuracy on the 
 
 ## Data:
 
-* `data_sample` *Contributors: Colin Williams @williamsca, Emily Gu*
+* `data_sample` *Contributors: Colin Williams, Emily Gu*
 *  To download `emnist` dataset for CNN model training, follow the [python-mnist](https://pypi.org/project/python-mnist/) installation guide
 
 ## Image Processing Procedure
